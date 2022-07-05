@@ -58,7 +58,7 @@ public class TicketManagerTest {
     void shouldSortForPrice() {
 
         Ticket[] expect = new Ticket[]{ticket1, ticket2, ticket6, ticket3, ticket5, ticket4};
-        Ticket[] actual = new Ticket[]{ticket1, ticket2, ticket3, ticket4, ticket5, ticket6};
+        Ticket[] actual = new Ticket[]{ticket1, ticket5, ticket2, ticket4, ticket6, ticket3};
         Arrays.sort(actual);
 
         assertArrayEquals(expect, actual);
